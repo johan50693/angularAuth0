@@ -1,0 +1,15 @@
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12+">
+            <h2>Información del usuario</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <pre  *ngIf="auth.userProfile$ | async as profile" >
+                <code>{{ profile | json }}</code>
+            </pre>
+        </div>
+    </div>
+</div>
